@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: white;
+  --bg-cards: #e1e1e6;
+  --color-fill: #323238;
+  --slider: #323238;
+  --tx-color: #323238;
+
+  --slider-click: #ffffff;
+  --bg-cards-click: #02799d;
+  --color-fill-click: #ffffff;
+
+  font-size: 62.5%;
+}
+
+.dark:root {
+  --bg-color: #121214;
+  --bg-cards: #29292e;
+  --color-fill: #c4c4cc;
+  --slider: #ffffff;
+  --tx-color: #ffffff;
+
+  --bg-cards-click: #0a3442;
+  --color-fill-click: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: var(--tx-color);
+  font-size: 12.6rem;
+  height: 100vh;
+  background: var(--bg-color);
+
+  display: grid;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.page {
+  justify-self: center;
+  align-self: center;
+}
+
+.hide {
+  display: none;
+}
+header {
+  position: absolute;
+  top: 0rem;
+  right: 8rem;
+}
+.light-mode,
+.dark-mode {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 82.1rem;
+  height: 33.6rem;
+}
+
+.pomodoro-timer {
+  width: 32.1rem;
+  height: 21.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#timer {
+  font-size: clamp(4rem, 4rem + 10vw, 10.8rem);
+  display: flex;
+  margin: 0 auto;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0 auto;
+
+  border-radius: 9999px;
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+#controls button svg path {
+  fill: var(--color-fill);
+}
+
+.cards-sounds {
+  width: 30.8rem;
+  height: 33.6rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+.cards-sounds .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+
+  border-radius: 2.4rem;
+  background: var(--bg-cards);
+
+  width: 13.8rem;
+  height: 15.2rem;
+  cursor: pointer;
+}
+.cards:focus {
+  background: var(--bg-cards-click);
+}
+
+.cards svg path {
+  fill: var(--color-fill);
+}
+.cards input {
+  appearance: none;
+  border-radius: 10rem;
+
+  width: 9rem;
+  height: 0.5rem;
+
+  background-color: var(--slider);
+  margin-top: 3rem;
+}
+.cards input::-webkit-slider-thumb {
+  cursor: pointer;
+  background-color: var(--slider);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  appearance: none;
+}
