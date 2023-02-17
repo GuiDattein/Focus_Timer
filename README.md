@@ -1,4 +1,4 @@
-# Explorer_proj.6 </br> ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+# Focus Timer #6 </br> ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 <h2>Porjeto 6 feito no curso Explorer da RocketSeat</h2>
 
