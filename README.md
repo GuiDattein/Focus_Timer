@@ -19,7 +19,7 @@
 ##
 <div>
   <h3>Aviso</h3>
-  <p>Projeto em finalização, porém só é possivel ver as funcionalidades abrindo o arquivo com o "LiveServer" do Visual Code, mas logo será arrumado</p>
+  <p>Projeto em finalização, porém só é possivel ver as funcionalidades abrindo o arquivo com o "LiveServer" do Visual Code, mas logo será lançado</p>
 </div>
 
 <div align="center">
